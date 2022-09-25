@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    search
+{% endblock %}
+
+{% block body %}
+
+<ul>
+    {% if not names %}
+        <h1> Error </h1>
+        <p> Specified file not found </p>
+    {% else %}
+        <h1>Search Results</h1>
+        {% for name in names %}
+            <li><a href = "{% url 'entry' name %}"> {{ name }} </a></li>
+                
+        {% endfor %}
+    {% endif %}
+</ul>
+
+{% endblock %}
