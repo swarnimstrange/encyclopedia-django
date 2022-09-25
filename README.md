@@ -1,4 +1,4 @@
-# encyclopedia-django
+# Encyclopedia-django
 
 This is an encyclopedia that consists of a number of encyclopedia entries on various topics.
 
